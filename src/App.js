@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage'
 import ContactPage from './pages/ContactPage'
 // import ContactEdit from './pages/ContactEditPage'
 import ContactDetails from './pages/ContactDetailsPage'
+import StatsPage from './pages/statsPage'
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/contacts/" component={ContactPage} />
             <Route path="/contacts/:id" component={ContactDetails} />
+            <Route path="/stats/" component={StatsPage} />
             </Switch>
             </BrowserRouter>
       </div>

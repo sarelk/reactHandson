@@ -7,7 +7,9 @@ export default class ContactList extends Component {
             this.props.contacts.map(contact =>
                 (
                     <li key={contact._id}>
-                        {contact.name}
+                        <a href={contact._id}>
+                            {contact.name}
+                        </a>
                     </li>
                 )
             )
@@ -17,7 +19,7 @@ export default class ContactList extends Component {
                 <ul>
                     {
                         contactList
-                        }
+                    }
                 </ul>
             </section>
         )
